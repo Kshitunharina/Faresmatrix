@@ -1,0 +1,147 @@
+/* Google Fonts Imported Link */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&family=Poppins:wght@200;300;400;500;600&family=Questrial&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/* Font Used */
+:root {
+  --font-1: "Open Sans", sans-serif;
+  --font-2: "Poppins", sans-serif;
+  --font-3: "Questrial", sans-serif;
+}
+
+/* Color Used */
+:root {
+  --heading-color: #004358;
+  --body--bg: #f8f9fa;
+  --text-color: #212529;
+  --text-para: #ced4da;
+  --btn-color: #ffd900;
+}
+
+:root {
+  --max-padding: 6rem;
+  --min-padding: 4rem;
+}
+
+/* CSS DEFAULT CHANGES */
+html {
+  font-size: 62.5%;
+}
+body {
+  font-weight: 400;
+  line-height: 1;
+  background: var(--body--bg);
+  scroll-behavior: smooth;
+}
+a:link {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+p {
+  line-height: 1.5;
+}
+button {
+  cursor: pointer;
+}
+
+/* SELECTION EFFECT OVER THE TAGS */
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+th::selection,
+tr::selection,
+span::selection,
+img::selection,
+td::selection,
+a::selection {
+  background: var(--heading-color);
+  color: #fff;
+}
+
+/* HEADER SECTION CSS */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+  height: 12vh;
+  overflow: hidden;
+}
+
+.header .logo_image {
+  height: 80px;
+}
+
+.header .nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.header .nav ul li a {
+  font-size: 2rem;
+  font-family: var(--font-1);
+  font-weight: 600;
+  color: var(--text-color);
+  position: relative;
+  top: 5px;
+}
+
+.header .burger {
+  border: 5px solid red;
+  padding: 10px;
+  display: none;
+}
+
+/* FIRST SECTION CSS */
+.First_section {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
+    url("../images/nature_1.jpg") center center/cover;
+  background-attachment: fixed;
+  height: 88vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.First_section h1,
+.First_section p {
+  color: #fff;
+  font-family: var(--font-3);
+  text-align: center;
+  font-weight: 600;
+}
+
+.First_section h1 {
+  font-size: 8rem;
+  letter-spacing: -1px;
+}
+
+.First_section p {
+  font-size: 2rem;
+}
+
+.First_section button {
+  border: none;
+  background-color: var(--btn-color);
+  color: var(--text-color);
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.2rem 2.4rem;
+  border-radius: 0.2rem;
+  font-family: var(--font-3);
+}
+
+.Second_section {
+  height: 100vh;
+}
